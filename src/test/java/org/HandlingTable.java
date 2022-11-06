@@ -43,7 +43,7 @@ public class HandlingTable {
                        driver.findElement(By.xpath("//input[@value=' Verify ']")).click();
                   String Result=     driver.findElement(By.xpath("//td[@id='status']")).getText();
                   if (Result.equalsIgnoreCase("PASS"))
-                      System.out.println("It fetched the correct Minimum value from the table");
+                      System.out.println("Success.! It fetched the correct Minimum value from the table");
 
                    }
     }
