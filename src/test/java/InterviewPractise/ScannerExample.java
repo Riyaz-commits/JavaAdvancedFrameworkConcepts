@@ -8,6 +8,6 @@ public class ScannerExample {
         Scanner sc = new Scanner(System.in);
     int val=    sc.nextInt();
 
-        System.out.println(val);
+        System.out.println("The provided value is "+val);
     }
 }

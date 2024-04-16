@@ -7,7 +7,24 @@ import java.util.stream.IntStream;
 public class ArrayPractiseStream {
 
     public static void main(String[] args) {
-        int arr[] = {45, 68, 1, 34, 60, 49};
+        int[] arr = {45, 68, 1, 34, 60, 49};
+
+        int[] sortedArr = Arrays.stream(arr)
+                .boxed() // Convert to Integer objects
+                .sorted((a, b) -> b.compareTo(a)) // Sort in reverse order
+                 .mapToInt(Integer::intValue) // Convert back to int
+                .toArray();
+       Arrays.stream(sortedArr).forEach(e-> System.out.println(e));
+  //      System.out.println("Sorted array in reverse order: " + Arrays.toString(arr));
+       // Arrays.stream(arr).sorted().forEach(e-> System.out.println(e));
+
+        List<Integer> list = List.of(5, 6, 1, 53, 25, 26);
+       // Collections.sort(list, Collections.reverseOrder());
+        Optional op = list.stream().max(Comparator.reverseOrder());
+        System.out.println(op.get());
+      //  Collections.sort(op, Collections.reverseOrder());
+        op.stream().forEach(e-> System.out.println(e));
+
 
         // converting the arrays to stream pipeline
         // using limit to get 1st n values
@@ -24,9 +41,9 @@ public class ArrayPractiseStream {
             System.out.println(reduce.getAsInt());
         }
         //to sum the values and sort the values
-        List<Integer> list = List.of(5, 6, 1, 53, 25, 26);
+     /*   List<Integer> list = List.of(5, 6, 1, 53, 25, 26);
         Optional op = list.stream().max(Comparator.reverseOrder());
-        System.out.println(op.get());
+        System.out.println(op.get());*/
 
         // to sort the values in the list
         Comparator<Integer> comp = (num1, num2) -> {

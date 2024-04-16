@@ -19,7 +19,8 @@ public class Reverse2digits {
               temp = temp+sb.charAt(i+1)+sb.charAt(i);
             }
         }
-        System.out.println(temp);
+        System.out.println(
+                temp);
 
     }
 }

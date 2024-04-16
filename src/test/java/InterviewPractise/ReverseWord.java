@@ -3,18 +3,18 @@ package InterviewPractise;
 public class ReverseWord {
 
     public static void main(String[] args) {
-        String s = "Riyaz Basha Shaik";
+        String st = "Riyaz Basha Shaik";
 
-        StringBuffer sb = new StringBuffer(s);
+     /*   StringBuffer sb = new StringBuffer(s);
         sb.reverse();
         System.out.println(sb);
-        String st = new String(sb);
+        String st = new String(sb);*/
       String val[]=  st.split(" ");
       String rev="";
       for (int i=0;i<=val.length-1;i++)
         {
 
-            rev= rev+" "+val[i];
+            rev= val[i]+" "+rev;
 
         }
         System.out.println(rev);

@@ -17,6 +17,7 @@ public class OccuranceLetters {
                     al.add(k.charAt(i));
                     for (int j = i + 1; j < k.length(); j++) {
                         if (k.charAt(i) == k.charAt(j)) {
+
                             count++;
                         }
                     }
