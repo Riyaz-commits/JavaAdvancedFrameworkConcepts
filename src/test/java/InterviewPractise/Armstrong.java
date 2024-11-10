@@ -10,7 +10,7 @@ public class Armstrong {
         while(a>0)
         {
             int remainder = a%10;
-         //   sum = sum+remainder*remainder*remainder; // armstrong
+          //  sum = sum+remainder*remainder*remainder; // armstrong
             sum = sum*10+remainder;  //palindrome
             a=a/10;
         }

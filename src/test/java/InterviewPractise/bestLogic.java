@@ -3,7 +3,7 @@ package InterviewPractise;
 public class bestLogic {
 
     public static void main(String[] args) {
-        String s = "aabbccddd";
+        String s = "aab345654bccddd1234";
 
         for (int i = 0; i < s.length(); i++) {
             if (Character.isAlphabetic(s.charAt(i))) {

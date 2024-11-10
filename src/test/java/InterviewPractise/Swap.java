@@ -17,4 +17,20 @@ public class Swap {
         s=s.substring(r.length());
         System.out.println(s+"  "+r);
     }
+
+    public static class RepeatWordInString {
+        public static void main(String[] args) {
+            String s = "happydaysundaymondaydaytuedaywedday";
+
+            int day = s.indexOf("day");
+            int count = 0;
+            while (day != -1) {
+                count++;
+                day = s.indexOf("day", day + 1);
+            }
+
+            System.out.println(count);
+        }
+
+    }
 }

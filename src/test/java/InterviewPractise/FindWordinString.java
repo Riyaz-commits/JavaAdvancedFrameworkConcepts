@@ -12,6 +12,10 @@ public class FindWordinString {
         if (m.find()){
             System.out.println(m.start() +"  "+m.end()+m.group());
         }
+        else
+        {
+            System.out.println("Not matched");
+        }
 
     }
 }

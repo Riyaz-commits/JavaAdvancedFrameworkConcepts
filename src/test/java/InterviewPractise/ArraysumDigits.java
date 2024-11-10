@@ -1,6 +1,6 @@
 package InterviewPractise;
 
-public class Arraysum {
+public class ArraysumDigits {
 
     public static void main(String[] args) {
 

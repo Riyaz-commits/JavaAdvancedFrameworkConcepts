@@ -20,7 +20,7 @@ public class ArrayPractiseStream {
 
         List<Integer> list = List.of(5, 6, 1, 53, 25, 26);
        // Collections.sort(list, Collections.reverseOrder());
-        Optional op = list.stream().max(Comparator.reverseOrder());
+        Optional op = list.stream().sorted().min(Comparator.reverseOrder());
         System.out.println(op.get());
       //  Collections.sort(op, Collections.reverseOrder());
         op.stream().forEach(e-> System.out.println(e));

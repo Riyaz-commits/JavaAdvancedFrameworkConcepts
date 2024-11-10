@@ -21,7 +21,7 @@ public class OccuranceLetters {
                             count++;
                         }
                     }
-                    System.out.println("Character " + k.charAt(i) + " " + count);
+                    System.out.println("The character " + k.charAt(i) + " " + count+ " times :>");
                 }
             }
         }
